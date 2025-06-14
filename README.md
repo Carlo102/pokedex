@@ -1,2 +1,2 @@
 # pokedex
-ReacJS
+A ReacJS App
