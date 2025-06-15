@@ -164,7 +164,10 @@ export function PokeCard(props) {
             </div>
             <h3>Moves</h3>
             <div className='pokemon-move-grid'>
-                {moves.map((moveObj, moveIndex) => {
+                
+                    {[...moves].sort((a,b) => a.move.name.localeCompare(b.move.name)).map((moveObj, moveIndex) =>
+                        { 
+                    
                     return (
                         <button className="button-card pokemon-move"
                             key={moveIndex} onClick={() => { 
